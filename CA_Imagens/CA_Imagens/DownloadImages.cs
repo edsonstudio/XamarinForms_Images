@@ -11,7 +11,7 @@ namespace CA_Imagens
         public DownloadImages()
         {
             var webImage = new Image { Aspect = Aspect.AspectFit };
-            webImage.Source = ImageSource.FromUri(new Uri("https://miro.medium.com/max/1400/1*7-KsaAXgrnlXOl5_8xtSng.png"));
+            webImage.Source = ImageSource.FromUri(new Uri("https://aka.ms/campus.jpg"));
 
             Content = new StackLayout
             {

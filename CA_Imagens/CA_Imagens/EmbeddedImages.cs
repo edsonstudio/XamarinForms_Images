@@ -12,7 +12,7 @@ namespace CA_Imagens
         {
             var embeddedImage = new Image { Aspect = Aspect.AspectFit };
 
-            embeddedImage.Source = ImageSource.FromResource("WorkingWithImages.beach.jpg", typeof(EmbeddedImages).GetTypeInfo().Assembly);
+            embeddedImage.Source = ImageSource.FromResource("CA_Imagens.beach.jpg", typeof(EmbeddedImages).GetTypeInfo().Assembly);
 
             Content = new StackLayout
             {
@@ -27,8 +27,7 @@ namespace CA_Imagens
                     },
 
                     embeddedImage,
-                    new Label
-                    { Text = "Esta imagem é um recurso incorporado e referenciado."}                    
+                    new Label { Text = "Esta imagem é um recurso incorporado e referenciado."}                    
                 },
                 Margin = new Thickness(20,35,20,20),
                 VerticalOptions = LayoutOptions.StartAndExpand,
